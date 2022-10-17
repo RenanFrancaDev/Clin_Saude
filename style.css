@@ -1,0 +1,745 @@
+
+/* Modelo https://institutosaudemelhor.com.br/ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: auto;
+    /* border: 10px solid black; */
+}
+
+#top_header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: rgb(43, 94, 10);
+    min-width: 360px;
+    margin: auto;
+}
+
+.top{
+    font-size: 0.9rem;
+}
+
+.top > ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+
+#contato_top > li{
+    padding-left: 15px;
+}
+
+#top_right{
+    display: block;
+    position: sticky;
+    float: right;
+    right: 0;
+}
+
+#top_right > ul{
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+
+.link_app{
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social_icon{
+    height: 22px;
+    margin-top:  5px;
+}
+
+a, a:link, a:visited{
+    color: rgb(43, 94, 10);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/* li{
+    margin-left: 60px;
+} */
+
+header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* top: 0; */
+    width: 100%;
+    height: 80px;
+    background-color: rgba(185, 185, 185, 0.3);
+    z-index: 1;
+    overflow: hidden;
+    margin: auto;
+}
+
+header, main, footer, #top_header{
+    max-width: 1600px;
+    min-width: 360px;
+}
+
+#logo_menu{
+    height: 80px;
+    margin-left: 1.5rem;
+}
+
+#menu_principal{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(43, 94, 10);
+}
+
+#menu_principal > li{
+    padding-left: 40px;
+    font-size: 0.8rem;
+}
+
+
+#principal{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-image: url("./clin_saude/medicos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    /* height: 600px; */
+    opacity: 0.7;
+    overflow: hidden;
+    /* margin: 50px; */
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+#principal_text{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color:rgb(245, 242, 253);
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+#principal_text > h3, h1, p{
+    padding-top: 30px;
+    width: 70%;
+    margin: auto;
+}
+
+#principal_text > h1{
+    font-size: 2.8rem;
+}
+
+#principal_text > p{
+    font-size: 1.1rem;
+}
+
+#principal_tabela, #principal_calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: white;
+    background-color: rgba(5, 5, 5, 0.5);
+    width: 50%;
+    position: relative;
+    
+}
+
+table{
+    margin: auto;
+    margin-top: 50px;
+}
+
+td, tr{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(226, 141, 92);
+}
+
+tr{
+    text-align: center;
+}
+
+#calculadora{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    background-color: rgba(5, 5, 5, 0.8);
+    box-sizing: border-box;
+    padding: 20px;
+    /* margin-left: 50px; */
+    border: 2px solid rgb(226, 141, 92);
+    margin-bottom: 10px;
+}
+
+#calculadora > h4{
+    /* margin-left: 25%; */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+#calculadora > input, #calculadora > button{
+    width: 150px;
+    /* margin-left: 25%; */
+}
+#calculadora > button{
+    border-radius: 3rem;
+    border: 2px solid rgb(226, 141, 92);
+}
+
+#instituto{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    background-color: rgba(185, 185, 185, 0.3);
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+#instituto_text{
+    display: block; 
+    width: 50%;
+}
+
+
+#instituto_foto{
+    display: block;
+    width: 50%;
+    height: 400px;
+    background-image: url(./clin_saude/local.jpg);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+
+.escrita{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#instituto_exp{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 100px;
+    /* padding: 20px; */
+}
+
+#instituto_exp > p, #instituto_exp > h3{
+    /* font-size: 0.5rem; */
+    margin: 0;
+    padding-top: 15px;
+}
+
+#diferenciais{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    background-color: rgba(185, 185, 185, 0.3);
+    
+}
+
+.box{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: rgb(94, 172, 94, 0.6);
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.box_img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background-color: rgba(127, 177, 127);
+    border: 1px solid white;
+}
+
+.box_img:after{
+    display: block;
+    content: "\2695";
+    font-size: 45px;
+    line-height: 100%;
+    margin-left: 15px;
+}
+
+.box > h3, .box > p{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 300px; */
+    background-color: white;
+}
+
+#endereco{
+    display: block;
+    width: 50%;
+}
+
+#endereco > ul{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;   
+    flex-flow: column;
+    list-style: none;
+    align-items: flex-start;
+    
+}
+
+.lista_contato{
+    color:#888888;;
+    font-family: fontawesome;
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    padding: 5px;
+}
+
+#lista_endereco::before{
+    color: black;
+    content: "\1F4CD";
+    float: left;
+    padding-right: 5px;
+
+}
+
+#lista_telefone::before{
+    color: black;
+    content: "\1F4DE";
+    float: left;
+    padding-right: 5px;
+}
+
+#lista_email::before{
+    color: black;
+    content: "\1F4E7";
+    float: left;
+    padding-right: 5px;
+}
+
+#lista_horario::before{
+    color: black;
+    content: "\23F0";
+    float: left;
+    padding-right: 5px;
+
+}
+
+#maps{
+    display: block;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px){
+
+    .top{
+        font-size: 0.7rem;
+    }
+
+    .social_icon{
+        height: 18px;
+    }
+
+    header{
+        
+        height: 50px;
+       
+    }
+
+    #logo_menu{
+        height: 2.5rem;
+        margin-left: 40px;
+    }
+    
+    
+    #menu_principal > li{
+        padding-left: 15px;
+        font-size: 0.7rem;
+    }
+    
+   .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+   }
+    
+    #principal_text > h3, h1, p{
+        padding-top: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    #principal_text > h1{
+        font-size: 2.2rem;
+        margin: auto;
+    }
+    
+    #principal_text > p{
+        font-size: 0.9rem;
+    }
+    
+    #principal_tabela, #principal_calculadora{
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    
+
+    #principal_calculadora{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #instituto_text{
+        width: 100%;
+        
+    }
+    
+    #instituto_text > p, #instituto > p{
+        margin: 15px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    #instituto_foto{
+        display: block;
+        width: 80%;
+        height: 350px;
+        background-image: url(./clin_saude/local.jpg);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
+    
+    .escrita{
+        font-size: 1.4rem;
+    }
+    
+    #instituto_exp{
+       width: 100%;
+       padding: 0;
+       text-align: center;
+    }
+    
+    #instituto_exp > p, #instituto_exp > h3{
+        margin: 0;
+        padding-top: 15px;
+        text-align: center;
+    }
+    
+    #diferenciais{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2%;
+        width: 100%;
+        background-color: rgba(185, 185, 185, 0.3);
+        
+    }
+    
+    .box{
+        width: 180px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .box_img{
+        width: 40px;
+        height: 40px;;
+    }
+    
+    .box_img:after{
+        display: block;
+        content: "\2695";
+        font-size: 40px;
+        line-height: 100%;
+        margin-left: 0px;
+    }
+    
+    .box > h3, .box > p{
+        text-align: center;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    #endereco{
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+
+    #top_header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .top{
+        font-size: 0.7rem;
+    }
+   
+    #contato_top > li{
+        padding-left: 15px;
+    }
+    
+    
+    #top_right > ul{
+        display: flex;
+        float: right;
+        margin-right: 5px;
+    }
+    
+    .link_app{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .social_icon{
+        height: 15px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        /* top: 0; */
+        width: 100%;
+        height: 320px;
+        padding-bottom: 15px;
+    }
+
+    #menu_principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #menu_principal > li{
+        background-color: #efefef;
+        border: 2px solid green; 
+        border-radius: 20px;
+        padding-left: 0;
+        padding: 7px;
+        font-size: 1rem;
+        margin: 7px;
+    }
+
+    #logo_menu{
+        height: 4rem;
+        margin-left: 0px;
+    }
+    
+    
+   .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+   }
+
+   #principal_text{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+   }
+   
+    
+    #principal_text > h3, h1, p{
+        padding-top: 15px;
+        width: 95%;
+        margin: auto;
+    }
+    
+    #principal_text > h1{
+        font-size: 1.6rem;
+    }
+    
+    #principal_text > p{
+        font-size: 0.9rem;
+    }
+    
+    #principal_tabela, #principal_calculadora{
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    table{
+        font-size: 0.8rem;
+    }
+
+    td, tr{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #principal_calculadora {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+
+    #instituto_text{
+        width: 100%;
+        
+    }
+    
+    #instituto_text > p, #instituto > p{
+        margin: 5px;
+        width: 100%;
+        text-align: left;
+        font-size: 0.8rem;
+        padding: 2px;
+    }
+
+
+    #instituto_foto{
+        display: block;
+        width: 90%;
+        height: 220px;
+        background-image: url(./clin_saude/local.jpg);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .escrita{
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    
+    #instituto_exp{
+       width: 100%;
+       padding: 0;
+       text-align: center;
+       margin: 0;
+    }
+    
+    #instituto_exp > p, #instituto_exp > h3{
+        width: 100%;
+        margin: 0;
+        padding-top: 15px;
+        text-align: center;
+
+    }
+    
+    #diferenciais{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2%;
+        width: 100%;
+        background-color: rgba(185, 185, 185, 0.3);
+        
+    }
+    
+    .box{
+        width: 80%;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    
+    .box_img{
+        width: 40px;
+        height: 40px;;
+    }
+    
+    .box_img:after{
+        display: block;
+        content: "\2695";
+        font-size: 40px;
+        line-height: 100%;
+        margin-left: 0px;
+    }
+    
+    .box > h3, .box > p{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    #endereco{
+        display: block;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    
+    #endereco > ul{
+        margin-top: 20px;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;   
+        flex-flow: column;
+        list-style: none;
+        align-items: flex-start;
+    }
+
+    .lista_contato{
+        font-size: 0.8rem;
+    }
+    
+
+}

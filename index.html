@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Clínica Saúde</title>
+</head>
+<body>
+        <div id="top_header">
+            <div id="top_left" class="top">
+                <ul id="contato_top">
+                    <li>contato@clinicasaude.com.br</li>
+                    <li>+55 (11) 3055-XXXX</li>
+                </ul>
+            </div>
+            <div id="top_right" class="top">
+                <ul>
+                    <li><a href="www.facebook.com.br" class="link_app">
+                        <img href="www.facebook.com.br" class="social_icon" src="./clin_saude/facebook.png" alt="facebook"></a></li>
+                    <li><a href="www.whatsapp.com" class="link_app">
+                        <img href="www.whatsapp.com" class="social_icon" src="./clin_saude/whatsapp.png" alt="whatsapp"></a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+                <a><img id="logo_menu" src="./clin_saude/logo 3.png"></a>
+                <ul id="menu_principal">
+                    <li>HOME</li>
+                    <li>CONSULTA</li>
+                    <li>INSTITUTO</li>
+                    <li>DIFERENCIAIS</li>
+                    <li>LOCALIZAÇÃO</li>
+                </ul>
+        </header>
+        <main>
+        <section id="principal" class="container">
+            <div id="principal_text">
+                <h3>Instituto Clínica Saúde</h3>
+                <h1>SEJA BEM-VINDO(A)</h1>
+                <p>O Instituto Clínica Saúde surge da união de médicos e profissionais de saúde de diferentes especialidades, vínculados à grandes universidades e com vasta experiência na área da saúde, contibuindo para a melhor qualidade de vida para seus clientes</p>
+            </div>
+            <div id="principal_tabela">
+                <table>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Classificação</th>
+                        <th>Grau de Obesidade</th>
+                    </tr>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="principal_calculadora">
+                <h3>Faça uma consulta rápida, com o calculo do IMC.</h3> <br>
+                IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade.
+                <br> <br>
+                <div id="calculadora">
+                    <h4>IMC = Peso ÷ (Altura × Altura)</h4> <br>
+                    <h4>Altura(m):</h4>
+                    <input id="altura" name="altura" type="number" placeholder="Ex: 1.80"> <br>
+                    <h4>Peso(Kg):</h4>
+                    <input id="peso" name="name" type="number" placeholder="Ex: 80.5"> <br>
+                    <button onclick="calcular()">Calcular</button> <br>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </section>
+        <section id="instituto" class="container">
+            <h1 class="escrita"> - - CLÍNICA SAÚDE - - </h1>
+            <p>O Clínica Saúde foi fundada no início dos anos 1990, pelo Dr. Paulo, formado em medicina pela USP. O sucesso da Clínica Saúde, ao longo de seus 30 anos de funcionamento, em que nosso maior compromisso é com a saúde e bem estar de nossos clientes, proporcionando um atendimento médico com a tecnologia, qualidade, segurança, carinho e respeito que merecem.</p>
+            
+            <div id="instituto_text">
+                <p>Em 2017, como resultado do movimento de ampliação do escopo de atividades praticadas pelo corpo clínico e diretor, surge a marca <strong>Clínica Saúde</strong>, como uma forma de representar melhor os ideais e valores propagados atualmente.</p>
+                
+                   <p>Fazemos <strong>referência</strong> à prática sistêmica de cuidado de nossos clientes, bem como o desenvolvimento de pesquisa científica, produção de material pedagógico e práticas de impacto social pelos nossos membros.</p> 
+                    
+                    <p><strong>Convite para a reflexão do modelo de atendimento proposto:</strong> voltado para a promoção de saúde, menos personalizado no médico e mais centrado na experiência de nosso cliente.</p> 
+                    
+                    <p>qualificador Melhor busca coroar a busca incessante por resultados cada vez melhores em nossas práticas.</p>
+            </div>
+            <div id="instituto_foto"></div>
+            <div id="instituto_exp">
+                <h3>Missão:</h3>
+                <p>Oferecer cuidado em saúde com visão sistêmica, integrada e humanística, por meio de profissionais de diversas especialidades, com destacada formação acadêmica.</p>
+                <h3>Visão:</h3>
+                <p>Ser um modelo de referência nacional em qualidade do cuidado em saúde aliado ao dinamismo e visão mais global que uma clínica com múltiplas especialidades pode oferecer</p>
+                <h3>Valores:</h3>
+                <p>Humanismo, ética, competência, excelência no cuidado, respeito, comunicação eficaz, profissionalismo, pioneirismo.</p>
+            </div>
+        </section>
+        <section id="diferenciais" class="container">
+            <div id="corpo" class="box">
+                <div class="box_img"></div>
+                <h3>Corpo clínico qualificado</h3>
+                <p>O corpo clínico do Instituto Saúde Melhor é composto por médicos e profissionais de saúde de diversas especialidades, vinculados a grandes centros formadores.</p>
+            </div>
+            <div id="especialidades" class="box">
+                <div class="box_img"></div>
+                <h3>Várias especialidades</h3>
+                <p>Viabilizamos a realização de consultas integradas com diferentes especialistas, no mesmo local e horário, para agilizar o tratamento e proporcionar uma experiência de cuidado ainda mais completa!</p>
+            </div>
+            <div id="instalacoes" class="box">
+                <div class="box_img"></div>
+                <h3>Modernas instalações</h3>
+                <p>Para atendê-los com o maior conforto possível, contamos com uma infraestrutura moderna, em localização privilegiada no bairro de Pinheiros, em São Paulo.</p>
+            </div>
+        </section>
+    </main>
+        <footer class="container">
+            <div id="endereco">
+                <ul>
+                    <li class="lista_contato" id="lista_endereco">
+                        Av. Paulista, nº xxxx – São Paulo
+                        SP – Brasil – CEP: 01234-xxx
+                    </li>
+                    <li class="lista_contato" id="lista_telefone">
+                        +55(12)3060-xxxx
+                    </li>
+                    <li class="lista_contato" id="lista_email">
+                        contato@clinicasaude.com.br
+                    </li>
+                    <li class="lista_contato" id="lista_horario">
+                        Aberto de segunda a sexta, das 08:00 às 20:00
+                    </li>
+                </ul>
+            </div>
+            <div id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197491459011!2d-46.66072148194342!3d-23.561349525639386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1662141204899!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+
+    
+<script src="./script.js"></script>
+
+</body>
+</html>
